@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  website-aio:
+    build: .
+    working_dir: /website-aio
+    ports:
+      - "8080:8080"
+    command: 
+      sh -c "PORT=8080 npm start"
